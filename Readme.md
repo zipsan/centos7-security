@@ -7,6 +7,10 @@ CentOS Security Repository is not provided globally. So some of yum commands for
 * `yum --security update`
 * `yum-cron` ('security', 'security-minimal')
 
+In order to resolve this problem, create your own security repository and generate `updateinfo.xml` from [CEFS: CentOS Errata for Spacewalk](http://cefs.steve-meier.de/).
+
+This docker-compose.yml create it automatically.
+
 # Install
 
 ```
