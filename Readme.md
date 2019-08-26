@@ -9,7 +9,7 @@ CentOS Security Repository is not provided globally. So some of yum commands for
 
 In order to resolve this problem, create your own security repository and generate `updateinfo.xml` from [CEFS: CentOS Errata for Spacewalk](http://cefs.steve-meier.de/).
 
-This docker-compose.yml create it automatically.
+This docker-compose.yml create a docker image for centos security repository automatically.
 
 # Install
 
@@ -21,7 +21,7 @@ and access to `[docker-server-ip]:8080`.
 
 By default, crond running background update your security repository at 0:00AM every day.
 
-If you want to change this schedule, you should rewrite `crontab` and run `docker-compose up --force-recreate --build`.
+If you want to change this schedule, you should rewrite `crontab` file and run `docker-compose up --force-recreate --build`.
 
 # Configure & Use
 
