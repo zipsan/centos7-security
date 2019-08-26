@@ -23,4 +23,20 @@ By default, crond running background update your security repository at 0:00AM e
 
 If you want to change this schedule, you should rewrite `crontab` and run `docker-compose up --force-recreate --build`.
 
+# Configure & Use
+
+1. Add a security section to the repository setting file.
+
+```bash
+$ vim /etc/yum.repos.d/CentOS-Base.repo
+[security]
+name=CentOS-$releasever - Security
+baseurl=http://*******.zipsan.pw/
+```
+
+1. Check & Update packages
+
+```bash
+$ sudo yum update --security
+```
 
