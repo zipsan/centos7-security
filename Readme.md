@@ -23,7 +23,7 @@ By default, crond running background update your security repository at 0:00AM e
 
 If you want to change this schedule, you should rewrite `crontab` file and run `docker-compose up --force-recreate --build`.
 
-# Configure & Use
+# Configure & Usage
 
 1. Add a security section to the repository setting file.
 
